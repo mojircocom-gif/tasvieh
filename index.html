@@ -1,46 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>دانلود برنامه تسویه</title>
+<title>دانلود فایل‌ها</title>
 <style>
 body {
   font-family: Tahoma, Arial, sans-serif;
   background: #f2f4f7;
-  text-align: center;
   margin: 0;
-  padding: 100px 15px;
+  padding: 30px 12px;
+  color: #222;
 }
-.box {
+.card {
   background: white;
-  max-width: 350px;
-  margin: auto;
-  padding: 35px 20px;
-  border-radius: 12px;
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 25px 18px;
+  text-align: center;
+  border-radius: 14px;
   box-shadow: 0 3px 15px #0001;
 }
-h2 {
-  font-size: 22px;
-  margin-bottom: 25px;
-}
+h1 { font-size: 23px; }
+h2 { font-size: 19px; }
+p { color: #555; line-height: 1.8; }
 .btn {
   display: inline-block;
   background: #16803c;
   color: white;
-  padding: 15px 32px;
+  padding: 13px 22px;
+  margin: 8px 0;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
+.image-guide {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border-radius: 8px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 25px 0;
+}
 </style>
 </head>
 <body>
-<div class="box">
-  <h2>دانلود برنامه تسویه</h2>
-  <a class="btn" href="./tasvieh.html" download="tasvieh.html">
-    دانلود فایل
-  </a>
-</div>
+
+<main class="card">
+  <h1>مرکز دانلود فایل‌ها</h1>
+
+  <section>
+    <h2>برنامه تسویه</h2>
+    <p>برای دریافت برنامه تسویه روی دکمه زیر کلیک کنید.</p>
+    <a class="btn" href="./tasvieh.html"
+       download="tasvieh.html">
+       دانلود برنامه تسویه
+    </a>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>راهنمای تشخیص لیوان کاغذی</h2>
+    <p>تصویر آموزشی تشخیص گرماژ لیوان کاغذی</p>
+
+    <img class="image-guide"
+         src="./rahnamaye-livan.jpg"
+         alt="راهنمای تشخیص لیوان کاغذی">
+
+    <a class="btn" href="./rahnamaye-livan.jpg"
+       download="rahnamaye-livan.jpg">
+       دانلود تصویر راهنمای لیوان کاغذی
+    </a>
+  </section>
+</main>
+
 </body>
 </html>
