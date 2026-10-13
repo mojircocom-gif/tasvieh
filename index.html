@@ -1,84 +1,35 @@
+راهنمای کوتاه مدیریت صفحه دانلود GitHub
 
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>دانلود فایل‌ها</title>
-<style>
-body {
-  font-family: Tahoma, Arial, sans-serif;
-  background: #f2f4f7;
-  margin: 0;
-  padding: 30px 12px;
-  color: #222;
-}
-.card {
-  background: white;
-  max-width: 480px;
-  margin: 20px auto;
-  padding: 25px 18px;
-  text-align: center;
-  border-radius: 14px;
-  box-shadow: 0 3px 15px #0001;
-}
-h1 { font-size: 23px; }
-h2 { font-size: 19px; }
-p { color: #555; line-height: 1.8; }
-.btn {
-  display: inline-block;
-  background: #16803c;
-  color: white;
-  padding: 13px 22px;
-  margin: 8px 0;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.image-guide {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 16px auto;
-  border-radius: 8px;
-}
-hr {
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin: 25px 0;
-}
-</style>
-</head>
-<body>
+آدرس مخزن:
+https://github.com/mojircocom-gif/tasvieh
 
-<main class="card">
-  <h1>مرکز دانلود فایل‌ها</h1>
+۱) بارگذاری فایل جدید
+- وارد مخزن شوید.
+- Add file > Upload files را بزنید.
+- فایل را انتخاب کنید و Commit changes را بزنید.
+- بهتر است نام فایل کوتاه و انگلیسی باشد؛ برای نمونه amoozesh-anbar.jpg یا app2.html.
+- فایل را در پوشه اصلی مخزن (کنار index.html و tasvieh.html) قرار دهید.
 
-  <section>
-    <h2>برنامه تسویه</h2>
-    <p>برای دریافت برنامه تسویه روی دکمه زیر کلیک کنید.</p>
-    <a class="btn" href="./tasvieh.html"
-       download="tasvieh.html">
-       دانلود برنامه تسویه
-    </a>
-  </section>
+۲) تغییر نسخه برنامه تسویه
+- برای جایگزینی برنامه، نسخه جدید را با نام tasvieh.html بارگذاری کنید.
+- اگر GitHub پرسید فایل هم‌نام جایگزین شود، تغییر را تأیید کنید.
+- فایل index.html را باز کنید و Edit را بزنید.
+- عبارت «نسخه ۱.۰» را در کارت برنامه به نسخه جدید، مثلاً «نسخه ۱.۱»، تغییر دهید.
+- Commit changes را بزنید.
+توجه: تغییر شماره نسخه در صفحه، خودِ برنامه را به‌روزرسانی نمی‌کند؛ فایل برنامه جدید هم باید جایگزین شود.
 
-  <hr>
+۳) اضافه‌کردن برنامه یا آموزش تازه
+- فایل تصویر جلد و فایل قابل دانلود را ابتدا در مخزن بارگذاری کنید.
+- فایل index.html را ویرایش کنید.
+- در کد به دنبال «کارت برنامه» یا «کارت آموزش» بگردید.
+- کل بلوک <article class="card" ...> مربوط به یک کارت را کپی کنید و قبل از </div> پایانیِ cardGrid قرار دهید.
+- در نسخه کپی‌شده نام فایل را در href عوض کنید، متن عنوان/توضیح/نسخه را تغییر دهید و نام تصویر را در src عوض کنید.
+- برای برنامه از data-category="program" و برای آموزش از data-category="guide" استفاده کنید.
+- در data-search کلمات مرتبط را بنویسید تا جستجو در صفحه آن کارت را پیدا کند.
+- Commit changes را بزنید.
 
-  <section>
-    <h2>راهنمای تشخیص لیوان کاغذی</h2>
-    <p>تصویر آموزشی تشخیص گرماژ لیوان کاغذی</p>
+فایل اصلی صفحه دانلود:
+https://github.com/mojircocom-gif/tasvieh/edit/main/index.html
 
-    <img class="image-guide"
-         src="./rahnamaye-livan.jpg"
-         alt="راهنمای تشخیص لیوان کاغذی">
-
-    <a class="btn" href="./rahnamaye-livan.jpg"
-       download="rahnamaye-livan.jpg">
-       دانلود تصویر راهنمای لیوان کاغذی
-    </a>
-  </section>
-</main>
-
-</body>
-</html>
+صفحه منتشرشده:
+https://mojircocom-gif.github.io/tasvieh/
